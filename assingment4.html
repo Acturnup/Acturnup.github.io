@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <title> Week 4 inclass </title>
+<style>
+td{
+
+  text-align: center;
+}
+.whitetile{
+  background-color: white;
+  color:black;
+  height: 50px;
+  width: 50px;
+}
+  .blacktile{
+    background-color: black;
+    color:white;
+    height: 50px;
+    width: 50px;
+}
+
+.wiki-content{
+  display:flex;
+  flex-flow:column wrap;
+  height:400px;
+  padding-left: 50px;
+  width: 70%;
+}
+.wiki-item{
+  width:50%;
+}
+</style>
+    </head>
+<body>
+  <div>
+    <h1>Assignment 4 </h1>
+      <h2>Table of contents</h2>
+<!-- make a list instead-->
+<p><a href="https://acturnup.github.io/assignment1.html"> Assingment1-- Hello World</a></p>
+
+<a href="https://acturnup.github.io/index.html"> Assingment2-- Sandwhich </a>
+<p></p>
+<a href="https://acturnup.github.io/assingment3.html">Assignment3-- Encyclopedia</a>
+<p></p>
+</div>
+
+
+<!---   PART2   <div> </div> -->
+<div>
+<h2>Challenge 2: Build a Chessboard</h2>
+
+ <table class="chess-board">
+        <tr>
+          <td  class="whitetile" > &#9814;</td>
+          <td  class= "blacktile"> &#9816;</td>
+          <td  class="whitetile"> &#9815;</td>
+          <td  class="blacktile"> &#9812;</td>
+          <td  class="whitetile"> &#9813;</td>
+          <td  class="blacktile">&#9815;</td>
+          <td  class="whitetile">&#9816;</td>
+          <td  class="blacktile"> &#9814;</td>
+        </tr>
+        <tr>
+          <td  class="blacktile">&#9817;</td>
+          <td  class="whitetile">&#9817;</td>
+          <td  class="blacktile">&#9817;</td>
+          <td  class="whitetile">&#9817;</td>
+          <td  class="blacktile">&#9817;</td>
+          <td  class="whitetile">&#9817;</td>
+          <td  class="blacktile">&#9817;</td>
+          <td  class="whitetile">&#9817;</td>
+        </tr>
+        <tr>
+          <td  class="whitetile"></td>
+          <td  class="blacktile"></td>
+          <td  class="whitetile"></td>
+          <td  class="blacktile"></td>
+          <td  class="whitetile"></td>
+          <td  class="blacktile"></td>
+          <td  class="whitetile"></td>
+          <td  class="blacktile"></td>
+        </tr>
+        <tr>
+          <td  class="blacktile"></td>
+          <td  class="whitetile"></td>
+          <td  class="blacktile"></td>
+          <td  class="whitetile"></td>
+          <td  class="blacktile"></td>
+          <td  class="whitetile"></td>
+          <td  class="blacktile"></td>
+          <td  class="whitetile"></td>
+        </tr>
+        <tr>
+          <td  class="whitetile"></td>
+          <td  class="blacktile"></td>
+          <td  class="whitetile"></td>
+          <td  class="blacktile"></td>
+          <td  class="whitetile"></td>
+          <td  class="blacktile"></td>
+          <td  class="whitetile"></td>
+          <td  class="blacktile"></td>
+        </tr>
+        <tr>
+          <td  class="blacktile"></td>
+          <td  class="whitetile"></td>
+          <td  class="blacktile"></td>
+          <td  class="whitetile"></td>
+          <td  class="blacktile"></td>
+          <td  class="whitetile"></td>
+          <td  class="blacktile"></td>
+          <td  class="whitetile"></td>
+        </tr>
+        <tr>
+          <td  class="whitetile">&#9823;</td>
+          <td  class="blacktile">&#9823;</td>
+          <td  class="whitetile">&#9823;</td>
+          <td  class="blacktile">&#9823;</td>
+          <td  class="whitetile">&#9823;</td>
+          <td  class="blacktile">&#9823;</td>
+          <td  class="whitetile">&#9823;</td>
+          <td  class="blacktile">&#9823;</td>
+        </tr>
+        <tr>
+          <td  class="blacktile">&#9820;</td>
+          <td  class="whitetile">&#9822;</td>
+          <td  class="blacktile">&#9821;</td>
+          <td  class="whitetile">&#9818;</td>
+          <td  class="blacktile">&#9819;</td>
+          <td  class="whitetile">&#9821;</td>
+          <td  class="blacktile">&#9822;</td>
+          <td  class="whitetile">&#9820;</td>
+        </tr>
+      </table>
+</div>
+<div>
+    <h2>Challenge 3: Create a Form</h2>
+    <form>
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" value="John"><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" value="Doe">
+    </form>
+
+    <p>Choose your favorite Animal:</p>
+<form>
+  <input type="radio" id="cat" name="fav_language" value="HTML">
+  <label for="cat">Cat</label><br>
+  <input type="radio" id="dog" name="fav_language" value="CSS">
+  <label for="dog">Dog</label><br>
+  <input type="radio" id="cheetah" name="fav_language" value="JavaScript">
+  <label for="cheetah">Cheetah</label>
+</form>
+<p>The <strong>What do you have?</strong> choose the checkbox</p>
+
+<form action="/action_page.php">
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a lambo</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a house</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a apartment</label><br><br>
+  <input type="submit" value="Submit">
+</form>
+</div>
+
+
+<!-- Part 4-->
+<!-- Section 1-->
+<div>
+<div>
+  <h2> Challenge 4: A Google Search Page </h2>
+  <a href="https://www.colorado.edu/atlas/"> <h3 class="">ATLAS Institute | University of Colorado Boulder</h3> </a>
+  <p><em>Radically interdisciplinary, ATLAS graduate programs nurture ...</em></p>
+  <!-- Lower section -->
+  <div class ="wiki-content">
+  <div class= "tab1">
+      <h4> <a href="https://www.colorado.edu/atlas/academics" >Academics</a></h4>
+      <p>Granted through the College of Engineering and Applied ...</p>
+  </div>
+  <div class = "tab2">
+      <h4> <a href="https://www.colorado.edu/atlas/faculty" >Faculty</a></h4>
+      <p>Lecturer, co-chair Board of Advisors • DESIGN, AR/VR ..</p>
+  </div>
+  <div class= "tab3">
+      <h4> <a href="https://www.colorado.edu/atlas/academics" >Graduate Degrees in Creative</a></h4>
+      <p>Granted through the College of Engineering and Applied ...</p>
+  </div>
+  <div class="tab4">
+      <h4> <a href="https://www.colorado.edu/atlas/academics" >About</a></h4>
+      <p>ATLAS is an interdisciplinary institute for radical creativity and ...</p>
+  </div>
+  <div>
+      <h4> <a href="https://www.colorado.edu/atlas/academics" >Undergraduate program</a></h4>
+      <p>Awarded through the college of Engineering and Applied</p>
+  </div>
+</div>
+</div>
+</div>
+
+
+<div>
+<h2>Challenge 5: Accessibility Concerns </h2>
+<p> To make this a better interface for accessibility.
+  I think it would be great to have more colors.
+  Having an actually navagation bar would be useful.
+  Also to get the chessboard to function. In the end also have my
+  form section submit to another page.
+  <p>
+
+</div>
+
+
+<div>
+  <h2> Part 2:Pattern Libary</h2>
+  <p> In a PDF attached </p>
+</div>
+    </body>
+</html>
