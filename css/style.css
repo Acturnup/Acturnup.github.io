@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Roboto+Serif:ital,wght@1,200&family=Roboto:wght@300&family=Source+Sans+Pro&display=swap');
 *{
   outline: none;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+font-family: 'Comfortaa', cursive;
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5KlFN5E1-UTa7iFEjQAhinxGNuGhkaPxZaw&usqp=CAU");
 }
 p {
