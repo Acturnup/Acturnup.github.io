@@ -1,0 +1,36 @@
+/*
+color/text
+background-colorado
+
+make it curved
+hover
+transiston
+*/
+.fancy-button{
+  color: #fff;
+  background-color:#dc5b5d;
+
+  font-size:20px;
+  padding: 13px 20px;
+
+  border:none;
+  border-radius:30px;
+  margin-left:0px;
+
+  transition: background-color .15s ease-in-out,margin ease-in-out;
+
+}
+.moved{
+  margin-left:20px
+}
+.fancy-button:hover{
+  background-color:black;
+  padding
+}
+.hidden-thing {
+  display:none;
+  background-color:blanchedalmond;
+}
+.fancy-header:hover .hidden-thing {
+
+}

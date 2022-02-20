@@ -1,0 +1,21 @@
+p {
+  color: red;
+  text-align: center;
+}
+h1{
+  font-style : italic;
+  font-size: 300%;
+}
+#test-id-1{
+  color:purple;
+}
+.test-class{
+  text-shadow: 20px 20px red;
+}
+a:hover{
+  color:white;
+}
+
+P::first-letter{
+  font-size:100%;
+}
