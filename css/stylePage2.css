@@ -41,12 +41,8 @@ body{
   grid-column: 3;
   background-color:aqua;
 }
-/*WHY WONT this work I put in the right postions   */
-.assignments{
-  text-align: left;
-  padding: 1px;
-  background-color:purple;
-}
+
+
 p {
   color: #000000;
   text-align: left;
@@ -153,11 +149,7 @@ a:visited {
     background-color:aqua;
   }
   /*WHY WONT this work I put in the right postions   */
-  .assignments{
-    text-align: left;
-    padding: 1px;
-    background-color:purple;
-  }
+
   p {
     color: #000000;
     text-align: left;
