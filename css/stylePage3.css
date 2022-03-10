@@ -2,7 +2,7 @@
 body{
   font-family: 'Comfortaa', cursive;
 /* how to make the picture fit correctly???? */
-  background-image: url("https://images.unsplash.com/photo-1646773906310-8bbcfa0a11ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+  background-image: url("https://images.unsplash.com/photo-1646764065835-917bed6cc0b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOXx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60");
   background-position: center;
   background-size:cover;
   position:relative;
@@ -27,7 +27,7 @@ body{
   align-self: start;
   grid-row: 1/2;
   grid-column: 2;
-    text-decoration-color: black;
+  text-decoration-color: black;
   background-color:green;
 }
 .info{
@@ -42,23 +42,18 @@ body{
   grid-column: 3;
   background-color:aqua;
 }
-/*WHY WONT this work I put in the right postions   */
-.assignments{
-  text-align: left;
-  padding: 1px;
-  background-color:purple;
-}
+
+
 p {
   color: #000000;
-  text-align: center;
+  text-align: left;
   padding: 5px
 }
 h1{
   font-style : normal;
-  font-size: 400%;
+  font-size: 300%;
 }
-h2{
-  text-align:center;
+h3{
   font-style : normal;
   font-size: 150%;
 }
@@ -115,7 +110,7 @@ a:visited {
   body{
     font-family: 'Comfortaa', cursive;
   /* how to make the picture fit correctly???? */
-    background-image: url("https://images.unsplash.com/photo-1646773906310-8bbcfa0a11ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+    background-image: url("https://images.unsplash.com/photo-1646764065835-917bed6cc0b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOXx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60");
     background-position: center;
     background-size:cover;
     position:relative;
@@ -140,7 +135,7 @@ a:visited {
     align-self: start;
     grid-row: 1/2;
     grid-column: 2;
-      text-decoration-color: black;
+    text-decoration-color: black;
     background-color:green;
   }
   .info{
@@ -155,23 +150,18 @@ a:visited {
     grid-column: 3;
     background-color:aqua;
   }
-  /*WHY WONT this work I put in the right postions   */
-  .assignments{
-    text-align: left;
-    padding: 1px;
-    background-color:purple;
-  }
+
+
   p {
     color: #000000;
-    text-align: center;
+    text-align: left;
     padding: 5px
   }
   h1{
     font-style : normal;
-    font-size: 400%;
+    font-size: 300%;
   }
-  h2{
-    text-align:center;
+  h3{
     font-style : normal;
     font-size: 150%;
   }
@@ -222,4 +212,5 @@ a:visited {
   .btn-1:hover{
     background: #F7931E;
   }
+
 }
