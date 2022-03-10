@@ -2,7 +2,7 @@
 body{
   font-family: 'Comfortaa', cursive;
 /* how to make the picture fit correctly???? */
-  background-image: url("https://images.unsplash.com/photo-1646660528305-eb8ef9533ba6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80");
+  background-image: url("https://images.pexels.com/photos/3109807/pexels-photo-3109807.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
   background-position: center;
   background-size:cover;
   position:relative;
@@ -15,97 +15,88 @@ body{
   gap: 1em ;
   justify-items:stretch;
   align-items:stretch;
-  background-color: red;
 }
-.nested{
+.nested-nav{
   display:grid;
-  grid-template-columns:repeat(1,1fr);
+  grid-row: 1/2;
+  grid-column: 1;
+  gap: 1em;
+}
+.nested-nav a{
+  text-align: center;
+  text-decoration: none;
+  display:block;
+  border: none;
+  background: #FBB03B;
+  padding: 5px 5px;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 40px;
+  cursor:pointer;
+  outline:none;
+  width:50%;
+  transition: background 1s;
+  box-shadow: 3px 3px 2px 1px rgba(0, 0, 255, .2);
+}
+.nested-nav a:hover{
+  background: #F7931E;
+  color:white;
+}
+.nested-nev a:visited {
+  color: #FF00FF;
 }
 .title1{
+  text-shadow: 0 0 3px #000, 0 0 5px #000;
   padding: 1px;
   text-align: center;
   align-self: start;
   grid-row: 1/2;
   grid-column: 2;
-  background-color:green;
+  color: white;
 }
 .info{
-  text-align: left;
+  grid-row: 2/3;
+  grid-column: 2;
   padding: 1px;
-  background-color:pink;
+}
+.info p{
+  text-shadow: 0 0 3px #000, 0 0 5px #000;
+  font-size: 15px;
+  color: white;
+  text-align: left;
 }
 .random{
+  color: white;
   padding: 1px;
-  text-align: left;
   grid-row: 1/2;
   grid-column: 3;
-  background-color:aqua;
 }
-/*WHY WONT this work I put in the right postions   */
+.random a{
+  text-shadow: 0 0 3px #fff, 0 0 5px #fff;
+  color:white;
+  text-align:center;
+  text-decoration: none;
+}
+.random a:hover{
+    text-shadow: 0 0 3px #fff, 0 0 5px #000;
+}
 .assignments{
   text-align: left;
   padding: 1px;
-  background-color:purple;
 }
 p {
   color: #000000;
-  text-align: left;
+  text-align: center;
   padding: 5px
 }
 h1{
   font-style : normal;
-  font-size: 300%;
+  font-size: 400%;
 }
-h3{
+h2{
+  text-align:center;
   font-style : normal;
   font-size: 150%;
-}
-a:hover{
-  color:#FF0000;
-}
-a:visited {
-  color: #FF00FF;
-}
-
-.btn-holder{
-  padding: 1px;
-  grid-row: 1/2;
-  grid-column: 1/2;
-  background-color: aqua;
-}
-.btn-holder_1{
-  padding: 1px;
-  grid-row: 2/3;
-  grid-column: 1/2;
-  background-color:pink;
-}
-.btn-holder_2{
-  padding: 1px;
-  grid-row: 3/4;
-  grid-column: 1/2;
-  background-color:yellow;
-}
-.btn-holder_3{
-  padding: 1px;
-  grid-row: 4/5;
-  grid-column: 1/2;
-  background-color:yellow;
-}
-.btn-1{
-  display: block;
-  border: none;
-  background: #FBB03B;
-  padding: 10px 15px;
-  color: #fff;
-  font-size: 20px;
-  border-radius: 50px;
-  cursor: pointer;
-  outline:none;
-  transition: background 1s;
-  box-shadow: 3px 3px 2px 1px rgba(0, 0, 255, .2);
-}
-.btn-1:hover{
-  background: #F7931E;
 }
 
 }
@@ -113,7 +104,7 @@ a:visited {
   body{
     font-family: 'Comfortaa', cursive;
   /* how to make the picture fit correctly???? */
-    background-image: url("https://images.unsplash.com/photo-1646660528305-eb8ef9533ba6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80");
+    background-image: url("https://images.pexels.com/photos/3109807/pexels-photo-3109807.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
     background-position: center;
     background-size:cover;
     position:relative;
@@ -126,96 +117,88 @@ a:visited {
     gap: 1em ;
     justify-items:stretch;
     align-items:stretch;
-    background-color: red;
   }
-  .nested{
+  .nested-nav{
     display:grid;
-    grid-template-columns:repeat(1,1fr);
+    grid-row: 1/2;
+    grid-column: 1;
+    gap: 1em;
+  }
+  .nested-nav a{
+    text-align: center;
+    text-decoration: none;
+    display:block;
+    border: none;
+    background: #FBB03B;
+    padding: 5px 5px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 40px;
+    cursor:pointer;
+    outline:none;
+    width:50%;
+    transition: background 1s;
+    box-shadow: 3px 3px 2px 1px rgba(0, 0, 255, .2);
+  }
+  .nested-nav a:hover{
+    background: #F7931E;
+    color:white;
+  }
+  .nested-nev a:visited {
+    color: #FF00FF;
   }
   .title1{
+    text-shadow: 0 0 3px #000, 0 0 5px #000;
     padding: 1px;
     text-align: center;
     align-self: start;
     grid-row: 1/2;
     grid-column: 2;
-    background-color:green;
+    color: white;
   }
   .info{
-    text-align: left;
+    grid-row: 2/3;
+    grid-column: 2;
     padding: 1px;
-    background-color:pink;
+  }
+  .info p{
+    text-shadow: 0 0 3px #000, 0 0 5px #000;
+    font-size: 15px;
+    color: white;
+    text-align: left;
   }
   .random{
+    color: white;
     padding: 1px;
-    text-align: left;
     grid-row: 1/2;
     grid-column: 3;
-    background-color:aqua;
   }
-  /*WHY WONT this work I put in the right postions   */
+  .random a{
+    text-shadow: 0 0 3px #fff, 0 0 5px #fff;
+    color:white;
+    text-align:center;
+    text-decoration: none;
+  }
+  .random a:hover{
+      text-shadow: 0 0 3px #fff, 0 0 5px #000;
+  }
   .assignments{
     text-align: left;
     padding: 1px;
-    background-color:purple;
   }
   p {
     color: #000000;
-    text-align: left;
+    text-align: center;
     padding: 5px
   }
   h1{
     font-style : normal;
-    font-size: 300%;
+    font-size: 400%;
   }
-  h3{
+  h2{
+    text-align:center;
     font-style : normal;
     font-size: 150%;
   }
-  a:hover{
-    color:#FF0000;
-  }
-  a:visited {
-    color: #FF00FF;
-  }
 
-  .btn-holder{
-    padding: 1px;
-    grid-row: 1/2;
-    grid-column: 1/2;
-    background-color: aqua;
-  }
-  .btn-holder_1{
-    padding: 1px;
-    grid-row: 2/3;
-    grid-column: 1/2;
-    background-color:pink;
-  }
-  .btn-holder_2{
-    padding: 1px;
-    grid-row: 3/4;
-    grid-column: 1/2;
-    background-color:yellow;
-  }
-  .btn-holder_3{
-    padding: 1px;
-    grid-row: 4/5;
-    grid-column: 1/2;
-    background-color:purple;
-  }
-  .btn-1{
-    display: block;
-    border: none;
-    background: #FBB03B;
-    padding: 10px 15px;
-    color: #fff;
-    font-size: 20px;
-    border-radius: 50px;
-    cursor: pointer;
-    outline:none;
-    transition: background 1s;
-    box-shadow: 3px 3px 2px 1px rgba(0, 0, 255, .2);
-  }
-  .btn-1:hover{
-    background: #F7931E;
-  }
 }
