@@ -1,7 +1,10 @@
 @media screen and (min-width:401px){
 body{
   font-family: 'Comfortaa', cursive;
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5KlFN5E1-UTa7iFEjQAhinxGNuGhkaPxZaw&usqp=CAU");
+  background-image: url("https://images.unsplash.com/photo-1646773906310-8bbcfa0a11ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+  background-position: center;
+  background-size: cover;
+  position:relative;
 }
 .container{
   display:grid;
@@ -10,7 +13,7 @@ body{
   padding: 20px;
   gap: 1em   ;
 }
-.search-container{
+/*.search-container{
   padding: 5px;
   grid-row: 1/2;
   grid-column: 4/4;
@@ -21,10 +24,41 @@ body{
   width: 59%;
   height: 15%;
 }
+*/
+.round {
+    width: 100%;
+    border-radius: 15px;
+    border: 1px #000 solid; /* bored color and size  */
+    padding: 5px 5px 5px 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background: #D3D3D3;
+}
+
+.corner {
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    height: 20px;
+    width: 20px;
+    z-index: 10;
+    border-radius: 10px;
+    border: none;
+    background: #000; /* Set the bg image here. with "no-repeat" */
+}
+
+.search {
+    position: relative;
+    width: 190px;
+    height: 30px;
+}
 .picture{
   padding: 10px;
   grid-row: 2/3;
   grid-column: 1/2;
+  background-color:blue;
 }
 .info{
   text-align: left;
@@ -73,11 +107,13 @@ a:visited {
   padding: 1px;
   grid-row: 1/2;
   grid-column: 2/3;
+  background-color:pink;
 }
 .btn-holder_2{
   padding: 1px;
   grid-row: 1/2;
   grid-column: 3/4;
+    background-color:yellow;
 }
 .btn-1{
   display: block;
@@ -93,8 +129,9 @@ a:visited {
   box-shadow: 3px 3px 2px 1px rgba(0, 0, 255, .2);
 }
 .btn-1:hover{
-  background: #ED1C24;
+  background: #F7931E;
 }
+
 }
 @media screen and (max-width:400px){
   body{
@@ -177,6 +214,12 @@ a:visited {
     grid-row: 1/2;
     grid-column: 3/4;
   }
+  .btn-holder_3{
+    padding: 1px;
+    grid-row: 1/2;
+    grid-column: 3/4;
+    background-color:
+  }
   .btn-1{
     display: block;
     border: none;
@@ -191,6 +234,6 @@ a:visited {
     box-shadow: 3px 3px 2px 1px rgba(0, 0, 255, .2);
   }
   .btn-1:hover{
-    background: #ED1C24;
+    background: #F7931E;
   }
 }
