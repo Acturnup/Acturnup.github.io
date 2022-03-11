@@ -36,6 +36,7 @@ body{
   width:50%;
   transition: background 1s;
   box-shadow: 3px 3px 2px 1px rgba(0, 0, 255, .2);
+  margin: .5em .5em;
 }
 .nested-nav a:hover{
   background: #F7931E;
