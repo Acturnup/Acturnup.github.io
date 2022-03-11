@@ -103,10 +103,12 @@ h2{
 @media screen and (max-width:400px){
   body{
     font-family: 'Comfortaa', cursive;
+    background-color: purple;
   /* Found this online  */
     background-image: url("https://images.pexels.com/photos/3109807/pexels-photo-3109807.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
-    background-position: center;
-    background-size:cover;
+    background-position: right 50% bottom 60%;;
+    background-size: cover;
+    background-repeat: no-repeat;
     position:relative;
   }
   .container{

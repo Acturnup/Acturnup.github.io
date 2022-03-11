@@ -88,10 +88,12 @@ h3{
 @media screen and (max-width:400px){
   body{
     font-family: 'Comfortaa', cursive;
+    background-color: mediumpurple;
   /* how to make the picture fit correctly???? */
     background-image: url("https://media1.giphy.com/media/26tOVxw5cTv22Z2rS/giphy.gif?cid=ecf05e47s9uqk6gc1slj7pw56qov8kezttpx4wsqgx8azc4s&rid=giphy.gif&ct=g");
     background-position: right 10% bottom 50%;;
-    background-size:85%;
+    background-size:cover;
+    background-repeat: no-repeat;
     position: relative;
   }
   .container{
