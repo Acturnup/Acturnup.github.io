@@ -17,7 +17,6 @@ body{
   align-items:stretch;
 }
 .nested-nav{
-  display:grid;
   grid-row: 1/2;
   grid-column: 1;
   gap: 1em;
@@ -37,6 +36,7 @@ body{
   width:50%;
   transition: background 1s;
   box-shadow: 3px 3px 2px 1px rgba(0, 0, 255, .2);
+  margin: .5em .5em;
 }
 .nested-nav a:hover{
   background: #F7931E;
@@ -104,7 +104,6 @@ h3{
     align-items:stretch;
   }
   .nested-nav{
-    display:grid;
     grid-row: 1/2;
     grid-column: 1;
     gap: 1em;
@@ -124,6 +123,7 @@ h3{
     width:50%;
     transition: background 1s;
     box-shadow: 3px 3px 2px 1px rgba(0, 0, 255, .2);
+    margin: .5em .5em;
   }
   .nested-nav a:hover{
     background: #F7931E;
