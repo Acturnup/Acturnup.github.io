@@ -107,7 +107,7 @@ h2{
     border-radius: 40px;
     cursor:pointer;
     outline:none;
-    width:50%;
+    width:99%;
     transition: background 1s;
     box-shadow: 3px 3px 2px 1px rgba(0, 0, 255, .2);
     margin: .5em .5em;
