@@ -1,0 +1,51 @@
+div{
+  /*transition:<property> <duration> <timing-function> <delay>; */
+}
+#delay{
+  transition: font-size 2s ease-out 0.1s;
+  /*
+  transition-property: font-size;
+  transition-duration: 4s;
+  transition-timing-function:ease-out;
+  transition-delay:0.5s;
+  */
+}
+#delay:hover{
+  font-size:50px;
+}
+.box{
+  border-style: solid;
+  border-width:1px;
+  display: block;
+  width:100px;
+  height:100px;
+  background-color:#0000FF;
+  transition-duration: 2s, 1s;
+  /*transition-property: width, height, background-color, transform;*/
+  transition:width 2s, height 2s,background-color 2s, transform 2s;
+  /*transition: all 2s;*/
+}
+#box:hover{
+  background-color:#FFCCCC;
+  width: 200px;
+  height: 200px;
+  transform: rotate(180deg);
+}
+p{
+  animation-duration: 3s;
+  animation-name:slidein;
+}
+@keyframes slidein{
+  from {
+    margin-left:100%
+    width:300%;
+  }
+  50%
+  {
+    margin-left: 25%;
+  }
+  to{
+    margin-left: 0%
+    width:100%;
+  }
+}
