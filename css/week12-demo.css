@@ -12,17 +12,17 @@ html {
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  background-color: #4287f5;
+  background-color: #F9E79F;
 }
 
 .app {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 600px;
-  background-color: white;
-  border-radius: 5px;
+  background-color: lightblue;
+  border-radius: 50px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
 }
 
@@ -35,7 +35,7 @@ header {
 }
 
 .quotes {
-  padding: 20px 50px;
+  padding: 25px 50px;
   min-height: 200px;
 }
 
