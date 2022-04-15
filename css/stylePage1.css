@@ -7,6 +7,22 @@ body{
   background-size:cover;
   position:relative;
 }
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
 .container{
   display:grid;
   grid-template-columns: 1fr 2fr 1fr;
