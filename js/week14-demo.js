@@ -1,83 +1,123 @@
-const myCar = new Object();
-myCar.color = 'Gray';
-myCar.make = 'Mazda';
-myCar.model = "CX-5";
-myCar.Year = '2017';
-// General Syntax: object.property= value;
+// Sam, Tech, Manager, 40000, true
+// Mary, Finance, Trainee, 18500, true
+// Bill, HR, Executive, 21200, false
+//part 1 -playing with json
 
-console.log(myCar.make);
+const employees =[
+{
+  name:"Sam",
+  department: "Tech",
+  designation: "Manger",
+  salary: 40000,
+  raiseEligable: true,
+},
+{
+  name:"Mary",
+  department: "Finance",
+  designation: "Trainee",
+  salary: 18500,
+  raiseEligable: true,
+},
+{
+  name:"Bill",
+  department: "HR",
+  designation: "Executive",
+  salary: 21200,
+  raiseEligable: false,
+},
 
-// a Second way of defing an object
-const mySecondCar = {
-  color: 'Blue',
-  make: 'Ford',
-  model: 'Ranger',
-  year: '2020'
+];
 
-}
-console.log(mySecondCar.drive);
-console.log(myCar['make']);
-//////
+console.log('Problem 1',employees);
 
-  let superHeroes = {
-  "squadName": "Super hero squad",
-  "homeTown": "Metro City",
-  "formed": 2016,
-  "secretBase": "Super tower",
-  "active": true,
-  "members": [
-    {
-      "name": "Molecule Man",
-      "age": 29,
-      "secretIdentity": "Dan Jukes",
-      "powers": [
-        "Radiation resistance",
-        "Turning tiny",
-        "Radiation blast"
-      ]
-    },
-    {
-      "name": "Madame Uppercut",
-      "age": 39,
-      "secretIdentity": "Jane Wilson",
-      "powers": [
-        "Million tonne punch",
-        "Damage resistance",
-        "Superhuman reflexes"
-      ]
-    },
-    {
-      "name": "Eternal Flame",
-      "age": 1000000,
-      "secretIdentity": "Unknown",
-      "powers": [
-        "Immortality",
-        "Heat Immunity",
-        "Inferno",
-        "Teleportation",
-        "Interdimensional travel"
-      ]
-    }
-  ]
-}
+//problem 2
+// Create JSON for the company with the following details (companyName, website, employees)
+//Tech Stars, www.techstars.site, array of Employees
 
-console.log(superHeroes['members'][0]['powers'][1]);
-//fucntion to add a new superhero
-
-
-//function
-function populateHeader (x) {
-  const header = document.querySelector('header');
-  const myH1 = document.createElement('h1');
-
-  myH1.TextContext = x['squadName'];
-  header.appendChild(myH1);
-
-  const myPara = document.createElement('p');
-  //use ` for cation for a const name
-  myPara.TextContext = `HomeTown: ${x['homeTown']} // Formed: ${x['formed']}`;
-
-header.appendChild(myPara);
+const company = {
+  companyName: "Tech Stars",
+  website: "www.techstars.site",
+  employees:employees,  // is it pushing the const or the var in the company ???
 };
+console.log('Problem2',company);
 
-populateHeader(superHeroes);
+
+//problem 3
+// A new employee has joined the company. Update the JSON from problems 1 and 2 to reflect the addition of:
+//Anna, Tech, Executive, 25600, false
+function addEmployee(employeeName, dept,desig, sal,raiseEligable)
+{
+  const newEmployee = {
+    name:employeeName,
+    department: dept,
+    designation: desig,
+    salary: sal,
+    raiseEligable: raiseEligable,
+  };
+  employees.push(newEmployee);
+}
+addEmployee ('Anna','Tech','Executive',25600,false);
+console.log('Problem 3', company);
+
+//problem 4
+//Given the JSON for the company, calculate the total salary for all company employees.
+
+let totalSalary= employees[0].salary + employees[1].salary + employees[2].salary + employees[3].salary;
+console.log('Problem 4', totalSalary);
+
+let totalSalaryBetter = 0;
+for(let i = 0; i < employees.length; i++)
+{
+  totalSalary += employees[i].salary;
+
+}
+console.log('Problem 4 Better', totalSalaryBetter);
+
+
+// problem 5
+//It's raise time. If an employee is raise eligible, increase their salary by 10%. Given the JSON of the company and its employees,
+//write a function to update the salary for each employee who is raised eligible, then set their eligibility to false.
+
+function doRaises()
+{
+for(let i = 0; i < employees.length; i++)
+{
+  totalSalary += employees[i].salary;
+  if(employees[i].raiseEligable)
+  {
+    employees[i].salary *= 1.1;
+    employees[i].raiseEligable = false;
+  }
+}
+}
+doRaises();
+console.log('Problem 5', employees);
+
+
+// problem 6
+
+/*
+Some employees have decided to work from home. The following array indicates who is working from home.
+Use the array to update the company JSON. For each employee, add another property called 'wfh' and set it to true of false
+
+  set a new property WFH on each employee
+  and set ppl form the array to wfh true
+Working from home: ['Anna', 'Sam']
+*/
+
+const workFromHomePpl = ['Anna', 'Sam'];
+function setWFH()
+{
+for(let i = 0; i < employees.length; i++)
+  {
+    // set a new wfh property
+    employees[i].wfh = workFromHomePpl.includes(employees[i].name);
+
+    // use array to set hem correctly
+      //  console.log (workFromHomePpl.includes(employees[i].name));
+  //  console.log (employees[i].name, workFromHomePpl.includes(employees[i].name));
+
+  }
+}
+setWFH();
+console.log('Problem 6',employees);
