@@ -1,0 +1,252 @@
+/*Website version */
+@media screen and (min-width:401px){
+  body{
+    font-family: 'Comfortaa', cursive;
+  /* how to make the picture fit correctly???? */
+    background-image: url("https://i.pinimg.com/originals/79/a3/84/79a384c3c449ad01b0e57e790807b2c0.gif");
+    background-position: right 50% bottom 60%;
+    background-size:cover-100px;
+    position: center;
+  }
+  .container{
+    max-width: 800px;
+    margin:0 auto;
+    padding: 100px;
+  }
+  element.style {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+  }
+  .nested-nav{
+    flex-basis:200px;
+    color: #fff;
+    margin: 0px;
+    top: 10px;
+    float: left;
+    display:block;
+    align-items: center;
+    position: absolute;
+    width: 250px;
+    height:100px;
+  }
+  .nested-nav a{
+    text-align: center;
+    text-decoration: none;
+    display:block;
+    border: none;
+    background: #FBB03B;
+    padding: 5px 5px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 40px;
+    cursor:pointer;
+    outline:none;
+    width:50%;
+    transition: background 1s;
+    box-shadow: 3px 3px 2px 1px rgba(0, 0, 255, .2);
+    margin: .5em .5em;
+  }
+  .nested-nav a:hover{
+    background: #F7931E;
+    color:white;
+  }
+  .nested-nev a:visited {
+    color: #FF00FF;
+  }
+  .title1{
+    text-shadow: 0 0 3px #000, 0 0 5px #0000ff;
+    padding: 1px;
+    font-size: 20px;
+    /* background: pink; */
+    color: white;
+    flex-basis:500px;
+    align-self: center;
+    margin-top: 110px;
+    margin-right: 10px;
+    text-align: center;
+  }
+  .info{
+    text-align: left;
+    padding: 1px;
+  }
+  .info p{
+    font-size: 15px;
+    color: white;
+    text-align: left;
+  }
+  .random{
+    padding: 1px;
+    text-align: left;
+  }
+  .random a{
+    color: white;
+  }
+  .random h2{
+    color: white;
+  }
+
+
+  .title1:nth-of-type(2){
+    flex-grow:2;
+    justify-content: start;
+  }
+  .info:nth-of-type(3){
+    flex-grow:2;
+    justify-content: start;
+  }
+  .random:nth-of-type(4){
+    flex-grow:2;
+    justify-content: start;
+  }
+
+
+  p {
+    color: #000000;
+    text-align: left;
+    padding: 5px
+  }
+  a {
+    color:white;
+  }
+  a:hover {
+    color:red;
+  }
+  a:active {
+    color:yellow;
+  }
+  h1{
+    font-style : normal;
+    font-size: 300%;
+  }
+  h2{
+    color:white;
+  }
+  h3{
+    font-style : normal;
+    font-size: 150%;
+  }
+}
+ /*  moblie version*/
+@media screen and (max-width:400px){
+  body{
+    font-family: 'Comfortaa', cursive;
+  /* Found this online from a youtube video*/
+    background-image: url("https://i.pinimg.com/originals/79/a3/84/79a384c3c449ad01b0e57e790807b2c0.gif");
+    /* background-position: right 50% bottom 60%; */
+    background-position: right 50% bottom 110%;
+    background-size:150%;
+    position: relative ;
+  }
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+p {
+  color: #000000;
+  text-align: center;
+  padding: 5px
+}
+h1{
+  font-style : normal;
+  font-size: 400%;
+}
+h2{
+  text-align:center;
+  font-style : normal;
+  font-size: 150%;
+}
+.container{
+ display: flex;
+ flex-direction: row;
+ height:400px;
+ /* background-color:#f4f4f4; */
+ /*goes along main axis*/
+ justify-content: center;
+  /*goes along cross axis*/
+ align-items: center;
+ flex-wrap: wrap;
+
+  /* justify-content: space-around;  */
+ /* allows you to start from left or right */
+
+}
+/* after flexbox*/
+/* .container::after{
+  content: '';
+  clear: both;
+  display: block;
+} */
+.nested-nav{
+  flex-basis:200px;
+  color: #fff;
+  margin: 0px;
+  top: 5px;
+  float: left;
+  display:block;
+  align-items: center;
+  position: absolute;
+  width: 250px;
+}
+.nested-nav a{
+  text-align: center;
+  text-decoration: none;
+  display:block;
+  border: none;
+  background: #FBB03B;
+  padding: 5px 5px;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 40px;
+  cursor:pointer;
+  outline:none;
+  width:50%;
+  transition: background 1s;
+  box-shadow: 3px 3px 2px 1px rgba(0, 0, 255, .2);
+  margin: .5em .5em;
+}
+.nested-nav a:hover{
+  background: #F7931E;
+  color:white;
+}
+.nested-nev a:visited {
+  color: #FF00FF;
+}
+.title1{
+  text-shadow: 0 0 3px #000, 0 0 5px #0000ff;
+  padding: 1px;
+  font-size: 14px;
+  /* background: pink; */
+  color: white;
+  flex-basis:500px;
+  align-self: center;
+  margin-top: 160px;
+  margin-right: 10px;
+}
+
+/* .title1 a:{
+  text-shadow: 0 0 3px #000, 0 0 5px #000;
+} */
+
+.nested-nav:nth-of-type(1){
+  flex-grow: 1;
+  flex-basis:200px;
+}
+.title1:nth-of-type(2){
+  flex-grow:9 ;
+  justify-content: start;
+
+}
+
+}
