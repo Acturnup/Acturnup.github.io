@@ -7,6 +7,7 @@
     background-position: right 50% bottom 60%;
     background-size:cover-100px;
     position: center;
+
   }
   .container{
     max-width: 800px;
@@ -133,7 +134,7 @@
     font-family: 'Comfortaa', cursive;
   /* Found this online from a youtube video*/
     background-image: url("https://i.pinimg.com/originals/79/a3/84/79a384c3c449ad01b0e57e790807b2c0.gif");
-    /* background-position: right 50% bottom 60%; */
+  /* background-position: right 50% bottom 60%; */
     background-position: right 50% bottom 110%;
     background-size:150%;
     position: relative ;
@@ -189,7 +190,7 @@ h2{
   display: block;
 } */
 .nested-nav{
-  flex-basis:200px;
+  flex-basis:00px;
   color: #fff;
   margin: 0px;
   top: 5px;
@@ -231,7 +232,7 @@ h2{
   color: white;
   flex-basis:500px;
   align-self: center;
-  margin-top: 160px;
+  margin-top: 225px;
   margin-right: 10px;
 }
 
