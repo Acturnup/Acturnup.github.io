@@ -2,7 +2,7 @@
 <html>
     <head>
       <meta charset="utf-8
-          <title></title>
+          <title> About Me</title>
     </head>
     <body>
         <p>I am Alexander Chan (He, His), and my goal in this GitHub repository is to create a website that looks cool and creative. Simultaneously, I aim to delve into the intricacies of understanding how to     become a better front-end and back-end coder."
