@@ -2,8 +2,8 @@
 <html>
     <head>
       <meta charset="utf-8">
-          <title> About me </title>
     </head>
+              <title> About me </title>
     <body>
         <p>I am Alexander Chan (He,His), my goal in this course is to make a website that looks cool and creative.
         I like to play basketball. </p>
